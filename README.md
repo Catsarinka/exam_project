@@ -1,1 +1,1 @@
-# exam_project
+About project
