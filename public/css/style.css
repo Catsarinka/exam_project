@@ -1,0 +1,265 @@
+/* INDEX */
+body {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", Arial, serif;
+  line-height: 1.8;
+  font-size: 16px;
+  background: #fff;
+  color: #776d6d;
+  font-weight: 300;
+
+}
+
+/* HEADER */
+
+
+header {
+  background: #505A5C;
+  padding: 15px 495px;
+}
+
+a.site-branding {
+  text-align: center;
+  color: #888;
+  margin-bottom: 45px;
+  height: auto;
+  padding: 0;
+  display: inline-block;
+}
+
+.main-header h1.site-title,
+.main-header .site-title a {
+  letter-spacing: 2px;
+  color: #131313;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.logo {
+  height: 250px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/* PORTFOLIO*/
+
+#myCanvas {
+  /* border: green solid 1px; */
+  background-image: url(snowman.svg);
+  margin: 10px;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+
+.content {
+
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+
+.portfolio {
+
+  max-width: 450px;
+  margin: 10px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.span {
+  font-family: "Roboto", Arial, serif;
+  color: rgb(99, 112, 117);
+  text-decoration: none;
+  text-align: center;
+
+}
+
+/* FOOTER*/
+
+footer {
+  max-width: 100%;
+  width: 250px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #bddcdf;
+}
+
+.contact {
+  height: 25px;
+  padding-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* PROJECTS */
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.title {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.projectImage {
+  height: 600px;
+}
+
+/* МОДАЛЬНЫЕ ОКНА */
+
+/* Запуск */
+#I,
+#II,
+#III {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+#I:hover {
+  opacity: 0.7;
+}
+
+#II:hover {
+  opacity: 0.7;
+}
+
+#III:hover {
+  opacity: 0.7;
+}
+
+/* Фон */
+.modal {
+  display: none;
+  /* Скрыто по умолчанию */
+  position: fixed;
+  /* Оставаться на месте */
+  z-index: 5;
+  /* Сидеть на вершине */
+  padding-top: 100px;
+  /* Расположение коробки */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Полная ширина */
+  height: 100%;
+  /* Полный высота */
+  overflow: auto;
+  /* Включите прокрутку, если это необходимо */
+  background-color: rgb(0, 0, 0);
+  /* Цвет запасной вариант */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Черный с непрозрачностью */
+
+}
+
+/* Изображение */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 800px;
+
+}
+
+
+
+/* Анимация */
+.modal-content {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* КНОПКА*/
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Ширина изображения на меньших экранах */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* Форма */
+
+.message_style {
+  width:500px;
+  padding:15px;
+  border-radius:15px;
+  border: 1px;;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.5);
+  height:150px;
+}
+
+.input_style {
+  width:500px;
+  padding:15px;
+  margin-bottom: 10px;
+  border-radius:15px;
+  border: 1px;;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.5);
+  height:10px;
+}
+.button_style {
+  cursor: pointer;
+  width:90px;
+  padding:15px;
+  margin: 10px;
+  border-radius:15px;
+  border: 1px;;
+  box-shadow:4px 4px 10px rgba(45, 151, 2, 0.5);
+  height:50px;  
+}
